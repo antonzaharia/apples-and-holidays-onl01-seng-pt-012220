@@ -93,7 +93,7 @@ holiday_hash.each do |seasons, holiday|
   supplies.map do |suply|
   if suply == "BBQ"
   print holiday.keys
-to_return << holiday.keys.flatten
+to_return << holiday.keys.join(", ")
   end
   end
   end
