@@ -89,11 +89,10 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
 holiday_hash.each do |seasons, holiday|
   holiday.each do |day, suplies|
-  to_return = []
-   suplies.each do |suply|
+   suplies.map do |suply|
    if suply == "BBQ"
-   to_return << day
-    return to_return
+   day
+    
     end
     end
     end
