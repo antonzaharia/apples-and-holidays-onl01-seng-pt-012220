@@ -91,7 +91,7 @@ holiday_hash.each do |seasons, holiday|
   holiday.each do |day, supplies|
   supplies.map do |suply|
   if suply == "BBQ" 
-  puts holiday.keys.join(", ")
+  holiday.keys.join(", ")
 
 
   end
